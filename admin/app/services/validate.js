@@ -1,12 +1,5 @@
 import Validator from "../../modules/Validator.js";
 
-// Các hàm validate cho từng input trong form
-// function validateAccount() {
-//     let isValid = validate("#TaiKhoan", emptyRule())
-//     if (isValid) return true
-//     return false
-// }
-
 const validateCode = new Validator({
    formInput: "#productCode",
    formMess: ".errorMess",
