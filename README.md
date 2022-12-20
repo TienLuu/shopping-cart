@@ -1,4 +1,4 @@
 # Shopping Cart
 
 Link Deploy:
-https://tienluu.github.io/Capstone_API/shop/app/views/
+https://tienluu.github.io/shopping-cart/shop/app/views/
