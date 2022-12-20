@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* i {
+    pointer-events: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+input:disabled,
+button:disabled {
+    cursor: default !important;
+    opacity: 0.5 !important;
+}

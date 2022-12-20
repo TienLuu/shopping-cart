@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dash Board</title>
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- bootstrap grid -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-grid.min.css">
+
+    <!-- toast CSS -->
+    <link rel="stylesheet" href="../../assets/css/toast.css">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/variable.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+
+<body>
+    <div id="main">
+
+        <!--======================= Navigation =====================-->
+        <div class="navigation" id="navigation">
+            <a href="" class="brand">
+                <div class="brand__icon">
+                    <i class='bx bx-analyse'></i>
+                </div>
+                <h3 class="brand__name">Dash Board</h3>
+            </a>
+            <nav>
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link active">
+                            <i class='bx bxs-dashboard'></i>
+                            <span>DashBoard</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-user-circle'></i>
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-message-square-dots'></i>
+                            <span>Message</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-help-circle'></i>
+                            <span>Help</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-cog'></i>
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-lock-open'></i>
+                            <span>Password</span>
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">
+                            <i class='bx bx-log-out bx-rotate-180'></i>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                    <div class="navigation__indicator"></div>
+                </ul>
+            </nav>
+            <div class="navigation__toggle" data-toggle="button" data-target="#navigation">
+            </div>
+        </div>
+        <!--======================= Content =====================-->
+        <div class="content">
+            <header class="header">
+
+                <div class="search-box">
+                    <input type="text" placeholder="Explore more">
+                    <button><i class='bx bx-search-alt-2'></i></button>
+                </div>
+                <div class="theme" id="theme" data-toggle="theme" data-target="#theme">
+                    <i class='bx bx-sun'></i>
+                    <i class='bx bx-moon'></i>
+                </div>
+                <div class="notify">
+                    <div class="notify__icon">
+                        <i class='bx bx-bell'></i>
+                    </div>
+                    <div class="notify__quantity">6</div>
+                </div>
+                <div class="account" data-toggle="dropdown" data-target="#accountSetting">
+                    <div class="account__desc">
+                        <div class="account__name">Minh Truyen</div>
+                        <div class="account__role">admin</div>
+                    </div>
+                    <div class="account__avatar">
+                        <img src="https://phunugioi.com/wp-content/uploads/2022/03/Avatar-Gau.jpg" alt="">
+                        <span class="acount__badge"></span>
+                    </div>
+                    <div class="account__setting" id="accountSetting">
+                        <ul class="account__setting-list">
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-user'></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-envelope'></i>
+                                    Inbox
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-check-square'></i>
+                                    Task
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-message'></i>
+                                    Chat
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-cog'></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-purchase-tag-alt'></i>
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-help-circle'></i>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="account__setting-item">
+                                <a href="#" class="account__setting-link">
+                                    <i class='bx bx-log-out bx-rotate-180'></i>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <h2>Dash Board</h2>
+            <section class="overview container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="overview__item">
+                            <div class="overview__icon" style="--backGround:#E0F9FD">
+                                <i class='bx bx-user' style="--color:#00cfe8"></i>
+                            </div>
+                            <div class="overview__desc">
+                                <p class="overview__quantity">33.456k</p>
+                                <span>Views</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="overview__item">
+                            <div class="overview__icon" style="--backGround:#EEECFE">
+                                <i class='bx bx-trending-up' style="--color:#7367f0
+                                "></i>
+                            </div>
+                            <div class="overview__desc">
+                                <p class="overview__quantity">50.2k</p>
+                                <span>Sales</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="overview__item">
+                            <div class="overview__icon" style="--backGround:#FDEAEA">
+                                <i class='bx bx-chat' style="--color:#ea5455"></i>
+                            </div>
+                            <div class="overview__desc">
+                                <p class="overview__quantity">1.432k</p>
+                                <span>Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 ">
+                        <div class="overview__item">
+                            <div class="overview__icon" style="--backGround:#E5F8ED">
+                                <i class='bx bx-dollar' style="--color:#28c76f"></i>
+                            </div>
+                            <div class="overview__desc">
+                                <p class="overview__quantity">$9999</p>
+                                <span>Revenue</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product container-fluid">
+                <div class="product__filter">
+                    <div class="product__search">
+                        <input type="text" placeholder="Search product by name" id="searchInput">
+                        <i class='bx bx-search bx-rotate-90'></i>
+                    </div>
+                    <div class="product__add">
+                        <button data-toggle="modal" data-target="#formModal" data-type="open"></button>
+                    </div>
+                </div>
+                <div class="product__wrap">
+                    <div class="product__header">
+                        <div class="row">
+                            <div class="product__id col-2 col-sm-1 col-md-1">
+                                No
+                            </div>
+                            <div class="product__name col-4 col-sm-3 col-md-2 ">
+                                Name
+                            </div>
+                            <div class="product__brand col-0 col-sm-2 col-md-1">
+                                Brand
+                            </div>
+                            <div class="product__price col-3 col-sm-2 col-md-2">
+                                Price
+                            </div>
+                            <div class="product__desc col-0 col-sm-0 col-md-3">
+                                Description
+                            </div>
+                            <div class="product__img col-0 col-sm-2 col-md-1">
+                                Image
+                            </div>
+                            <div class="col-3 col-sm-2"></div>
+                        </div>
+                    </div>
+                    <div id="product__content">
+                        <!-- ****************
+                            Product List Item
+                         ******************-->
+                        <div class="product__empty">Loading...</div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer"></footer>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="modal" id="previewModal">
+        <!-- <div class="overlay"></div>
+        <div class="preview">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-5">
+                        <img class="preview__img"
+                            src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg" alt="">
+                        <div class="preview__img-slide">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <h3 class="preview__name">IphoneX</h3>
+                        <p class="preview__desc">Thiết kế mang tính đột phá</p>
+                        <p class="preview__price">$1000</p>
+                        <div class="preview__info">
+                            <div class="preview__screen">
+                                <span>screen:</span> screen 69
+                            </div>
+                            <div class="preview__backCamera">
+                                <span>backCamera:</span> Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP
+                            </div>
+                            <div class="preview__frontCamera">
+                                <span>backCamera:</span> 32 MP
+                            </div>
+                            <div class="preview__type">
+                                <span>type:</span> Samsung
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal__close" data-toggle="modal" data-target="#previewModal">
+                <i class='bx bx-x'></i>
+            </div>
+        </div> -->
+    </div>
+    <div class="modal" id="formModal">
+        <div class="overlay"></div>
+        <div class="form__product">
+            <h2 class="form__header">Lorem, ipsum dolor.</h2>
+            <form>
+                <div class="form__group">
+                    <input type="text" id="productID" disabled hidden>
+                    <input class="form__control" type="text" id="productCode" placeholder="Mã sản phẩm">
+                    <label for="productCode">Code</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productName" placeholder="Tên sản phẩm">
+                    <label for="productName">Name</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productPrice" placeholder="Giá sản phẩm">
+                    <label for="productPrice">Price</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <select class="form__control" name="" id="productBrand" placeholder="Chọn hãng">
+                        <option value="">Chọn hãng sản phẩm</option>
+                        <option value="Iphone">Iphone</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Xiaomi">Xiaomi</option>
+                        <option value="Nokia">Nokia</option>
+                        <option value="Asus">Asus</option>
+                    </select>
+                    <label for="productBrand">Brand</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productBackCamera"
+                        placeholder="Thông số kỹ thuật camera sau">
+                    <label for="productBackCamera">Back Camera</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productFrontCamera"
+                        placeholder="Thông số kỹ thuật camera trước">
+                    <label for="productFrontCamera">Front Camera</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productImg" placeholder="Nhập đường link hình ảnh">
+                    <label for="productImg">Image</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__group">
+                    <input class="form__control" type="text" id="productScreen" placeholder="Nhập thông tin màn hình">
+                    <label for="productScreen">Screen</label>
+                    <span class="errorMess"></span>
+                </div>
+
+                <div class="form__group full-width">
+                    <textarea class="form__control" name="" id="productDesc" cols="20" rows="2"
+                        placeholder="Mô tả sản phẩm"></textarea>
+                    <label for="productDesc">Describtion</label>
+                    <span class="errorMess"></span>
+                </div>
+                <div class="form__submit">
+                    <!-- <button class="submitBtn" data-type="add">Confirm</button>
+                    <button class="cancleBtn" data-toggle="modal" data-target="#formModal">Cancel</button> -->
+                </div>
+            </form>
+            <div class="modal__close" data-toggle="modal" data-target="#formModal">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+    </div>
+    <div id="toast"></div>
+
+
+    <!-- file xử lý các chức năng animation, translate... -->
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Thư viện axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- file xử lý các chức năng chính của ứng dụng (thêm sửa xóa) -->
+    <script type="module" src="../controllers/main.js"></script>
+</body>
+
+</html>
